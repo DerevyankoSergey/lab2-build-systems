@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="shop.service.ShopServiceTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2025-11-25T18:06:16.789Z" hostname="DESKTOP-IS78Q03" time="0.019">
-  <properties/>
-  <testcase name="testFilterByMinSpent" classname="shop.service.ShopServiceTest" time="0.018"/>
-  <testcase name="testFindByCategory" classname="shop.service.ShopServiceTest" time="0.0"/>
-  <system-out><![CDATA[]]></system-out>
-  <system-err><![CDATA[]]></system-err>
-</testsuite>
