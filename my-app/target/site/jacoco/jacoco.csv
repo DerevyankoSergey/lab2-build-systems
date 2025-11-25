@@ -1,0 +1,7 @@
+GROUP,PACKAGE,CLASS,INSTRUCTION_MISSED,INSTRUCTION_COVERED,BRANCH_MISSED,BRANCH_COVERED,LINE_MISSED,LINE_COVERED,COMPLEXITY_MISSED,COMPLEXITY_COVERED,METHOD_MISSED,METHOD_COVERED
+my-app,by.gstu.project,App,7,0,0,0,3,0,2,0,2,0
+my-app,shop.service,ShopService,1,54,1,1,0,11,1,7,0,7
+my-app,shop.ui,ConsoleUI,277,0,0,0,61,0,5,0,5,0
+my-app,shop.model,Category,6,6,0,0,2,1,2,1,2,1
+my-app,shop.model,Customer,3,27,0,0,1,5,1,4,1,4
+my-app,shop.model,Product,12,18,0,0,2,7,2,3,2,3

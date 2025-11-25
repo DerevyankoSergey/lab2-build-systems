@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="ru"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>ShopService.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">my-app</a> &gt; <a href="index.source.html" class="el_package">shop.service</a> &gt; <span class="el_source">ShopService.java</span></div><h1>ShopService.java</h1><pre class="source lang-java linenums">package shop.service;
+
+import shop.model.*;
+import java.util.ArrayList;
+import java.util.List;
+
+<span class="fc" id="L7">public class ShopService {</span>
+<span class="fc" id="L8">    private List&lt;Product&gt; products = new ArrayList&lt;&gt;();</span>
+<span class="fc" id="L9">    private List&lt;Customer&gt; customers = new ArrayList&lt;&gt;();</span>
+
+<span class="fc" id="L11">    public void addProduct(Product p) { products.add(p); }</span>
+<span class="fc" id="L12">    public void addCustomer(Customer c) { customers.add(c); }</span>
+
+    public List&lt;Product&gt; findByCategory(Category cat) {
+<span class="fc" id="L15">        return products.stream()</span>
+<span class="fc" id="L16">                .filter(p -&gt; p.getCategory().equals(cat))</span>
+<span class="fc" id="L17">                .toList();</span>
+    }
+
+    public List&lt;Customer&gt; filterByMinSpent(double min) {
+<span class="fc" id="L21">        return customers.stream()</span>
+<span class="pc bpc" id="L22" title="1 of 2 branches missed.">                .filter(c -&gt; c.getTotalSpent() &gt;= min)</span>
+<span class="fc" id="L23">                .toList();</span>
+    }
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.10.202304240956</span></div></body></html>
